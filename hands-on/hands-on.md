@@ -215,6 +215,19 @@ mkdir 02-Mapping
 cd 02-Mapping
 ```
 
+Your directory structure should be like this
+ ```
+.
+├── 01-QualityControl 
+├── 02-Mapping <- you should be in this folder
+└── data
+    ├── bowtie.sbatch
+    └── practical
+        ├── Escherichia_coli_K12.fasta
+        ├── Escherichia_coli_K_12_MG1655.annotation.fixed.bed
+        ├── SRR576933.fastq
+        └── SRR576938.fastq
+```
 
 ### 3 - Prepare the index file
 1. To make the index file, you will need the complete genome, in FASTA format. It has already been downloaded to gain time (Escherichia_coli_K12.fasta in the course folder) (The genome was downloaded from the NCBI). Note that we will not work with the latest version (NC_000913.3) but the previous one (NC_000913.2), because the available tools for visualization have not been updated yet to the latest version. This will not affect our results.
