@@ -152,7 +152,7 @@ ls
 ```
 > SRR576933_fastqc.html  SRR576933_fastqc.zip
 
-6. Download the HTML file SRR576933_fastqc.html on your LOCAL machine (either with ssh or the program you used to upload your data on the server). Using a bash command it would look like this.
+6. Download the HTML file SRR576933_fastqc.html on your LOCAL machine. You may use either the program you used to upload your data on the server (FileZilla, Cyberduck, MobaXterm..) or using ssh in the terminal. Example with ssh below : 
 ```bash
 
 ### OPEN A NEW TERMINAL
