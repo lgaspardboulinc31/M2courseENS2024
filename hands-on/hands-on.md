@@ -81,7 +81,7 @@ You will be logged as the "demo" account, with limited access. Make sure to chan
 ```bash
 sacctmgr update user <your-login> set defaultaccount=form_2022_23
 ```
-To the question : "**Would you like to commit changes? (You have 30 seconds to decide)**" => type **y **
+To the question : "**Would you like to commit changes? (You have 30 seconds to decide)**" => type **y**
 
 Check that you are now logged on the training project:
 
