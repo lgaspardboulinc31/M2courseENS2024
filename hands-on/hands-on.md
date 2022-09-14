@@ -76,6 +76,26 @@ The downloaded FASTQ file will also be available on the server (SRR576938.fastq.
 ```bash
 ssh -XY <login>@core.cluster.france-bioinformatique.fr
 ```
+You will be logged as the "demo" account, with limited access. Make sure to change to the project of the training :
+
+```bash
+sacctmgr update user <your-login> set defaultaccount=form_2022_23
+```
+To the question : "**Would you like to commit changes? (You have 30 seconds to decide)**" => type **y **
+
+Check that you are now logged on the training project:
+
+```bash
+sacctmgr show user <your-login> format=User,DefaultAccount
+```
+You should see 
+
+```bash
+DefaultAccount
+      User   Def Acct 
+---------- ---------- 
+yourlogin form_2022+ 
+```
 
 ### 2 - Set up your working environment
 1. Go to your working directory
