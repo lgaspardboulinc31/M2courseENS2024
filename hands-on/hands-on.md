@@ -112,9 +112,9 @@ cd cours_chipseq
 ```
 4. Copy the directory containing data for the practical. This creates a new folder named "practical" in your personal space 
 ```bash
-cp -r /shared/projects/form_2022_23/data/chipseq/data .
+cp -r /shared/projects/2319_ens_hts/data/chipseq/data .
 or
-cp -r /shared/projects/form_2022_23/data/chipseq/data shared/home/<login>/cours_chipseq.
+cp -r /shared/projects/2319_ens_hts/data/chipseq/data shared/home/<login>/cours_chipseq.
 ```
 5. Ckeck the structure of your directory using `tree`. It should be like this
  ```
