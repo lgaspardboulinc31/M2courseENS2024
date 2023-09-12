@@ -79,7 +79,7 @@ ssh -XY <login>@core.cluster.france-bioinformatique.fr
 You will be logged as the "demo" account, with limited access. Make sure to change to the project of the training :
 
 ```bash
-sacctmgr update user <your-login> set defaultaccount=form_2022_23
+sacctmgr update user <your-login> set defaultaccount=2319_ens_hts
 ```
 To the question : "**Would you like to commit changes? (You have 30 seconds to decide)**" => type **y**
 
