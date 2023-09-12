@@ -114,7 +114,7 @@ cd cours_chipseq
 ```bash
 cp -r /shared/projects/2319_ens_hts/data/chipseq/data .
 or
-cp -r /shared/projects/2319_ens_hts/data/chipseq/data shared/home/<login>/cours_chipseq.
+cp -r /shared/projects/2319_ens_hts/data/chipseq/data shared/home/<login>/cours_chipseq .
 ```
 5. Ckeck the structure of your directory using `tree`. It should be like this
  ```
