@@ -1,4 +1,4 @@
-# ChIP-seq Practical 2022
+# ChIP-seq Practical 2024
 
 
 1. [Introduction](#introduction)  
@@ -79,7 +79,7 @@ ssh -XY <login>@core.cluster.france-bioinformatique.fr
 You will be logged as the "demo" account, with limited access. Make sure to change to the project of the training :
 
 ```bash
-sacctmgr update user <your-login> set defaultaccount=2319_ens_hts
+sacctmgr update user <your-login> set defaultaccount=2420_ens_hts 
 ```
 To the question : "**Would you like to commit changes? (You have 30 seconds to decide)**" => type **y**
 
@@ -91,10 +91,9 @@ sacctmgr show user <your-login> format=User,DefaultAccount
 You should see 
 
 ```bash
-DefaultAccount
       User   Def Acct 
 ---------- ---------- 
-yourlogin form_2022+ 
+lgaspardb+ 2420_ens_+
 ```
 
 ### 2 - Set up your working environment
