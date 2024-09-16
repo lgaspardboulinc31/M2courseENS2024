@@ -345,6 +345,42 @@ Open the file SRR576933.out (for example using the ` less ` command), which cont
 ### 5 - Mapping the control
 1. Repeat the steps above (in 1 - Getting the FASTQC and 4 - Mapping the experiment) for the file SRR576938.fastq in a directory named "**Control**" within the directory 02-Mapping.
 
+```
+#Your directory should look like this:
+.
+├── 01-QualityControl
+│   ├── SRR576933_fastqc.html
+│   ├── SRR576933_fastqc.zip
+│   ├── SRR576938_fastqc.html
+│   └── SRR576938_fastqc.zip
+├── 02-Mapping
+│   ├── Control
+│   │   ├── SRR576938.bam
+│   │   ├── SRR576938.bam.bai
+│   │   ├── SRR576938.out
+│   │   └── SRR576938.sam.gz
+│   ├── index
+│   │   ├── Escherichia_coli_K12.1.ebwt
+│   │   ├── Escherichia_coli_K12.2.ebwt
+│   │   ├── Escherichia_coli_K12.3.ebwt
+│   │   ├── Escherichia_coli_K12.4.ebwt
+│   │   ├── Escherichia_coli_K12.rev.1.ebwt
+│   │   └── Escherichia_coli_K12.rev.2.ebwt
+│   └── IP
+│       ├── SRR576933.bam
+│       ├── SRR576933.bam.bai
+│       ├── SRR576933.out
+│       └── SRR576933.sam.gz
+└── data
+    ├── bowtie.sbatch
+    └── practical
+        ├── Escherichia_coli_K12.fasta
+        ├── Escherichia_coli_K_12_MG1655.annotation.fixed.bed
+        ├── gencode.vM25.annotation.gff3
+        ├── SRR576933.fastq
+        └── SRR576938.fastq
+```
+
 **Analyze the result of the mapped reads:  
 Open the file SRR576938.out. How many reads were mapped?**
 
