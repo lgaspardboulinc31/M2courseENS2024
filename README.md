@@ -1,4 +1,4 @@
-# M2 Epigenomics course ENS 2022
+# M2 Epigenomics course ENS 2024
 
 ## Practical ChIP-seq Analysis
 
