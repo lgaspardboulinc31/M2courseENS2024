@@ -343,7 +343,7 @@ gzip SRR576933.sam
 Open the file SRR576933.out (for example using the ` less ` command), which contains some statistics about the mapping. How many reads were mapped? How many multi-mapped reads were originally present in the sample? To quit less press 'q'**
 
 ### 5 - Mapping the control
-1. Repeat the steps above (in 4 - Mapping the experiment) for the file SRR576938.fastq in a directory named "**Control**" within the directory 02-Mapping.
+1. Repeat the steps above (in 1 - Getting the FASTQC and 4 - Mapping the experiment) for the file SRR576938.fastq in a directory named "**Control**" within the directory 02-Mapping.
 
 **Analyze the result of the mapped reads:  
 Open the file SRR576938.out. How many reads were mapped?**
