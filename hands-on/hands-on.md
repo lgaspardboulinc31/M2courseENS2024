@@ -93,7 +93,7 @@ You should see
 ```bash
       User   Def Acct 
 ---------- ---------- 
-lgaspardb+ 2420_ens_+
+<your-login> 2420_ens_+
 ```
 
 ### 2 - Set up your working environment
