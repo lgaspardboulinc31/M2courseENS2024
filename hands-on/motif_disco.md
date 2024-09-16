@@ -8,7 +8,7 @@ For this training, we will use this dataset:
 * ChIP-seq experiment conducted in mouse stem cells, published as: Chen et al (2008) [Integration of External Signaling Pathways with the Core Transcriptional Network in Embryonic Stem Cells](https://www.ncbi.nlm.nih.gov/pubmed/18555785) Cell 133(6),1106–1117.
 We will focus on the **Oct4 (also known as Pou5f1)** transcription factor. 
 
-You have at your disposal the set of pre-processed peaks on the IFB cluster in ***/shared/projects/2319_ens_hts/data/chipseq/Oct4_vs_GFP_mm9_summits.bed*** . To focus the region near the summit of the peaks (rather than the complete peaks), we use the summit file provided by MACS (only the base corresponding to the summit is listed in this file). 
+You have at your disposal the set of pre-processed peaks on the IFB cluster in ***/shared/projects/2420_ens_hts/data/chipseq/Oct4_vs_GFP_mm9_summits.bed*** . To focus the region near the summit of the peaks (rather than the complete peaks), we use the summit file provided by MACS (only the base corresponding to the summit is listed in this file). 
 
 
 ### Retrieve the peak sequences
