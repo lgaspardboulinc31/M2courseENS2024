@@ -15,10 +15,10 @@ You have at your disposal the set of pre-processed peaks on the IFB cluster in *
 
 For the motif analysis, you first need to extract the sequences corresponding to the peaks. There are several ways to do this (as usual...). If you work on a UCSC-supported organism, the easiest is to use **RSAT fetch-sequences**. Here, we will use Galaxy interface to retrieve the sequences.
 
-#### Galaxy tutorial
+#### Option 1: Galaxy tutorial
 Follow the tutorial on Moodle [here](https://moodle.bio.ens.psl.eu/mod/page/view.php?id=11333)
 
-#### Throught RSAT Fetch Sequence 
+#### Option 2: Throught RSAT Fetch Sequence 
 1. Open a connection to a Regulatory Sequence Analysis Tools server. You can choose between various website mirrors.
   * Teaching Server  (recommended for this training) [http://pedagogix-tagc.univ-mrs.fr/rsat/](http://pedagogix-tagc.univ-mrs.fr/rsat/)
 2. In the left menu, click on **NGS ChIP-seq** and then click on **fetch-sequences**. A new page opens, with a form
@@ -28,7 +28,7 @@ Follow the tutorial on Moodle [here](https://moodle.bio.ens.psl.eu/mod/page/view
   *  Add 50bp upstream and downstream. You will obtain sequences of 100bp (summit +/- 50bp)
 ![screenshot](/images/10_fetch_sequences.png)
 
-#### With the command line 
+#### Option 3: With the command line 
 You can also retrieve the sequences with the command line by using `bedtools` suite.
 ```
 ## Restrict the dataset to the summit of the peaks +/- 100bp using bedtools slop. Using bedtools slop to extend genomic coordinates allow not to go beyond chromosome boundaries as the user give the size of chromosomes as input (see fai file).
