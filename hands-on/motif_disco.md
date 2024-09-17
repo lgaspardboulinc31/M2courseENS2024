@@ -1,4 +1,4 @@
-# Analyze motifs with RSAT 2022
+# Analyze motifs with RSAT 2024
 
 
 ## Motif analysis <a name="motif"></a>
