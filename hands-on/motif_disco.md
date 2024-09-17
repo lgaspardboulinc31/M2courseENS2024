@@ -16,7 +16,7 @@ You have at your disposal the set of pre-processed peaks on the IFB cluster in *
 For the motif analysis, you first need to extract the sequences corresponding to the peaks. There are several ways to do this (as usual...). If you work on a UCSC-supported organism, the easiest is to use **RSAT fetch-sequences**. Here, we will do this, as the mouse genome is supported at UCSC.
 
 1. Open a connection to a Regulatory Sequence Analysis Tools server. You can choose between various website mirrors.
-  * Teaching Server  (recommended for this training) [https://rsat.france-bioinformatique.fr/teaching/](http://rsat.france-bioinformatique.fr/teaching/).
+  * Teaching Server  (recommended for this training) [https://rsat.france-bioinformatique.fr/teaching/](https://rsat.france-bioinformatique.fr/teaching/).
 2. In the left menu, click on **NGS ChIP-seq** and then click on **fetch-sequences**. A new page opens, with a form
   * Choose the mouse **mm9** genome reference
   *  For the BED file, **upload from your computer** the file you saved above
