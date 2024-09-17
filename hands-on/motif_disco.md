@@ -23,11 +23,14 @@ Follow the tutorial on Moodle [here](https://moodle.bio.ens.psl.eu/mod/page/view
 To perform Motif discovery, we are going to use the [RSAT tool]((https://rsat.france-bioinformatique.fr/teaching/).) The Teaching server is highly recommended for this tutorial. 
 
 1. Send the sequences directly to the program [**peak-motifs**](https://rsat.france-bioinformatique.fr/teaching/peak-motifs_form.cgi) by clicking on the button peak-motifs located below the results
-3. The default peak-motifs web form only displays the essential options. There are only two mandatory parameters that are 
+   
+2. The default peak-motifs web form only displays the essential options. There are only two mandatory parameters that are 
   * The title box 
   * The sequences
-4.Fill the peak sequences via the **URL box with the one you copied from Galaxy interface**.
-5. We could launch the analysis like this, but we will now modify some of the advanced options in order to fine-tune the analysis according to your data set.
+    
+3.Fill the peak sequences via the **URL box with the one you copied from Galaxy interface**.
+
+4. We could launch the analysis like this, but we will now modify some of the advanced options in order to fine-tune the analysis according to your data set.
   * Open the "Reduce peak sequences" title, and make sure the "Cut peak sequences: +/- " option is set to 0 (= we wish to analyze our full dataset)
   * Open the “Motif Discovery parameters” title, and check the oligomer sizes 6 (but not 7 or 8). 
   * Under “Compare discovered motifs with databases”, Keep the default
