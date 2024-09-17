@@ -15,7 +15,29 @@ You have at your disposal the set of pre-processed peaks on the IFB cluster in *
 
 For the motif analysis, you first need to extract the sequences corresponding to the peaks. There are several ways to do this (as usual...). If you work on a UCSC-supported organism, the easiest is to use **RSAT fetch-sequences**. Here, we will use Galaxy interface to retrieve the sequences.
 
+#### Galaxy tutorial
 Follow the tutorial on Moodle [here](https://moodle.bio.ens.psl.eu/mod/page/view.php?id=11333)
+
+### Throught RSAT Fetch Sequence 
+
+### With the command line 
+
+```
+## Restrict the dataset to the summit of the peaks +/- 100bp using bedtools slop. Using bedtools slop to extend genomic coordinates allow not to go beyond chromosome boundaries as the user give the size of chromosomes as input (see fai file).
+
+bedtools slop \
+  -b 100 \
+  -i Oct4_vs_GFP_mm9_summits.bed \
+  -g /shared/data/bank/mus_musculus/mm9/fasta/mm9.fa.fai  \
+  > Oct4_vs_GFP_mm9_summits_100bp.bed
+
+## Extract fasta sequence from genomic coordinate of peaks
+bedtools getfasta \
+  -fi /shared/data/bank/mus_musculus/mm9/fasta/mm9.fa \
+ -bed Oct4_vs_GFP_mm9_summits_100bp.bed \
+  -fo Oct4_vs_GFP_mm9_summits_100bp.fa
+
+```
 
   
 ### Motif discovery with RSAT
