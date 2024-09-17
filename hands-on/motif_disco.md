@@ -28,7 +28,7 @@ To perform Motif discovery, we are going to use the [RSAT tool]((https://rsat.fr
   * The title box 
   * The sequences
     
-3.Fill the peak sequences via the **URL box with the one you copied from Galaxy interface**.
+3. Fill the peak sequences via the **URL box with the one you copied from Galaxy interface**.
 
 4. We could launch the analysis like this, but we will now modify some of the advanced options in order to fine-tune the analysis according to your data set.
   * Open the "Reduce peak sequences" title, and make sure the "Cut peak sequences: +/- " option is set to 0 (= we wish to analyze our full dataset)
