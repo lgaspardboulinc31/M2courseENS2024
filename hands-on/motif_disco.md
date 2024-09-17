@@ -13,26 +13,22 @@ You have at your disposal the set of pre-processed peaks on the IFB cluster in *
 
 ### Retrieve the peak sequences
 
-For the motif analysis, you first need to extract the sequences corresponding to the peaks. There are several ways to do this (as usual...). If you work on a UCSC-supported organism, the easiest is to use **RSAT fetch-sequences**. Here, we will do this, as the mouse genome is supported at UCSC.
+For the motif analysis, you first need to extract the sequences corresponding to the peaks. There are several ways to do this (as usual...). If you work on a UCSC-supported organism, the easiest is to use **RSAT fetch-sequences**. Here, we will use Galaxy interface to retrieve the sequences.
 
 1. Open a connection to a Regulatory Sequence Analysis Tools server. You can choose between various website mirrors.
   * Teaching Server  (recommended for this training) [https://rsat.france-bioinformatique.fr/teaching/](https://rsat.france-bioinformatique.fr/teaching/).
-2. In the left menu, click on **NGS ChIP-seq** and then click on **fetch-sequences**. A new page opens, with a form
-  * Choose the mouse **mm9** genome reference
-  *  For the BED file, **upload from your computer** the file you saved above
-  *  open the panel **Reference from which the sequences should be fetched**
-  *  Add 50bp upstream and downstream. You will obtain sequences of 100bp (summit +/- 50bp)
-![screenshot](/images/10_fetch_sequences.png)
- 
- 
+
+2. Follow the tutorial on Moodle [here](https://moodle.bio.ens.psl.eu/mod/page/view.php?id=11333)
+
   
 ### Motif discovery with RSAT
 
-1. Send the sequences directly to the program **peak-motifs** by clicking on the button peak-motifs located below the results
-3. The default peak-motifs web form only displays the essential options. There are only two mandatory parameters that are **already filled**
+1. Send the sequences directly to the program [**peak-motifs**](https://rsat.france-bioinformatique.fr/teaching/peak-motifs_form.cgi) by clicking on the button peak-motifs located below the results
+3. The default peak-motifs web form only displays the essential options. There are only two mandatory parameters that are 
   * The title box 
   * The sequences
-4. We could launch the analysis like this, but we will now modify some of the advanced options in order to fine-tune the analysis according to your data set.
+4.Fill the peak sequences via the **URL box with the one you copied from Galaxy interface**.
+5. We could launch the analysis like this, but we will now modify some of the advanced options in order to fine-tune the analysis according to your data set.
   * Open the "Reduce peak sequences" title, and make sure the "Cut peak sequences: +/- " option is set to 0 (= we wish to analyze our full dataset)
   * Open the “Motif Discovery parameters” title, and check the oligomer sizes 6 (but not 7 or 8). 
   * Under “Compare discovered motifs with databases”, Keep the default
