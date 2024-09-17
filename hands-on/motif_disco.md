@@ -15,13 +15,12 @@ You have at your disposal the set of pre-processed peaks on the IFB cluster in *
 
 For the motif analysis, you first need to extract the sequences corresponding to the peaks. There are several ways to do this (as usual...). If you work on a UCSC-supported organism, the easiest is to use **RSAT fetch-sequences**. Here, we will use Galaxy interface to retrieve the sequences.
 
-1. Open a connection to a Regulatory Sequence Analysis Tools server. You can choose between various website mirrors.
-  * Teaching Server  (recommended for this training) [https://rsat.france-bioinformatique.fr/teaching/](https://rsat.france-bioinformatique.fr/teaching/).
-
-2. Follow the tutorial on Moodle [here](https://moodle.bio.ens.psl.eu/mod/page/view.php?id=11333)
+Follow the tutorial on Moodle [here](https://moodle.bio.ens.psl.eu/mod/page/view.php?id=11333)
 
   
 ### Motif discovery with RSAT
+
+To perform Motif discovery, we are going to use the [RSAT tool]((https://rsat.france-bioinformatique.fr/teaching/).) The Teaching server is highly recommended for this tutorial. 
 
 1. Send the sequences directly to the program [**peak-motifs**](https://rsat.france-bioinformatique.fr/teaching/peak-motifs_form.cgi) by clicking on the button peak-motifs located below the results
 3. The default peak-motifs web form only displays the essential options. There are only two mandatory parameters that are 
