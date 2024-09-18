@@ -20,7 +20,7 @@ Follow the tutorial on Moodle [here](https://moodle.bio.ens.psl.eu/mod/page/view
 
 #### Option 2: Throught RSAT Fetch Sequence 
 1. Open a connection to a Regulatory Sequence Analysis Tools server. You can choose between various website mirrors.
-  * Teaching Server  (recommended for this training) [https://pedagogix-tagc.univ-mrs.fr/rsat/](http://pedagogix-tagc.univ-mrs.fr/rsat/)
+  * Teaching Server  (recommended for this training) [https://rsat.france-bioinformatique.fr/teaching/fetch-sequences_form.php](https://rsat.france-bioinformatique.fr/teaching/fetch-sequences_form.php))
 2. In the left menu, click on **NGS ChIP-seq** and then click on **fetch-sequences**. A new page opens, with a form
   * Choose the mouse **mm9** genome reference
   *  For the BED file, **upload from your computer** the file you saved above
