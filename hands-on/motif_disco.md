@@ -33,6 +33,8 @@ You can also retrieve the sequences with the command line by using `bedtools` su
 ```
 ## Restrict the dataset to the summit of the peaks +/- 100bp using bedtools slop. Using bedtools slop to extend genomic coordinates allow not to go beyond chromosome boundaries as the user give the size of chromosomes as input (see fai file).
 
+module load bedtools
+
 bedtools slop \
   -b 100 \
   -i Oct4_vs_GFP_mm9_summits.bed \
