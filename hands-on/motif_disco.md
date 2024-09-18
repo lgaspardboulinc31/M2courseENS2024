@@ -36,14 +36,21 @@ You can also retrieve the sequences with the command line by using `bedtools` su
 bedtools slop \
   -b 100 \
   -i Oct4_vs_GFP_mm9_summits.bed \
-  -g /shared/data/bank/mus_musculus/mm9/fasta/mm9.fa.fai  \ #use mm9 reference genome shared on the cluster
+  -g /shared/data/bank/mus_musculus/mm9/fasta/mm9.fa.fai  \
   > Oct4_vs_GFP_mm9_summits_100bp.bed
+
+#in one line
+bedtools slop -b 100 -i Oct4_vs_GFP_mm9_summits.bed -g /shared/data/bank/mus_musculus/mm9/fasta/mm9.fa.fai > Oct4_vs_GFP_mm9_summits_100bp.bed
+
 
 ## Extract fasta sequence from genomic coordinate of peaks
 bedtools getfasta \
-  -fi /shared/data/bank/mus_musculus/mm9/fasta/mm9.fa \ #use mm9 reference genome shared on the cluster
+  -fi /shared/data/bank/mus_musculus/mm9/fasta/mm9.fa \ 
  -bed Oct4_vs_GFP_mm9_summits_100bp.bed \
   -fo Oct4_vs_GFP_mm9_summits_100bp.fa
+
+# in one line
+bedtools getfasta -fi /shared/data/bank/mus_musculus/mm9/fasta/mm9.fa -bed Oct4_vs_GFP_mm9_summits_100bp.bed -fo Oct4_vs_GFP_mm9_summits_100bp.fa
 
 ```
 
